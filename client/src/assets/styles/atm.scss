@@ -1,0 +1,120 @@
+.atm {
+  width: 70%;
+  margin: 120px auto 32px auto;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 32px 24px;
+  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  .atm-response {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  .vietqr {
+    display: inline-block;
+    margin-bottom: 18px;
+    width: 45%;
+  }
+  .table-atm {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    tbody tr {
+      overflow-y: auto;
+      width: 100%;
+      border-bottom: 1px solid #383737c4;
+    }
+    td {
+      padding: 8px;
+    }
+
+    td:first-child {
+      text-align: end;
+    }
+
+    td:last-child {
+      text-align: start;
+    }
+  }
+  .h-mb {
+    text-align: center;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 8px;
+      text-align: center;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      font-size: 14px;
+    }
+    thead {
+      color: rgb(235, 97, 17);
+    }
+    thead tr {
+      th {
+        border-bottom: 1px solid #ddd;
+        padding: 8px;
+        background-color: #f2f2f2;
+      }
+    }
+    tbody {
+      width: 100%;
+    }
+    tbody tr {
+      border-bottom: 1px solid #ddd;
+    }
+    tbody td {
+      padding: 8px;
+    }
+    tr:hover {
+      background-color: rgba(214, 214, 214, 0.31);
+    }
+  }
+}
+
+//////
+///
+@media screen and (max-width: 800px) {
+  .atm {
+    width: 100%;
+    box-sizing: border-box;
+    .vietqr {
+      display: block;
+      width: 100%;
+    }
+    .h-mb {
+      margin-top: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  }
+  #atm-response {
+    flex-direction: column;
+    width: 100%;
+  }
+}

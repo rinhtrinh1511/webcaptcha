@@ -1,0 +1,107 @@
+.wrap-home-page {
+  width: 80%;
+  margin: 120px auto 32px auto;
+  padding: 24px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 8px;
+
+  .captcha-home {
+    span {
+      animation: fadeIn 2s;
+      font-size: 26px;
+      color: rgba(49, 49, 49, 0.856);
+      font-weight: 800;
+    }
+  }
+  .service-all {
+    display: flex;
+    width: 90%;
+    margin: 36px auto;
+    justify-content: space-between;
+    .home-service {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border-radius: 8px;
+      width: 23%;
+      height: 420px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid transparent;
+      img {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom: 1px solid #a3a3a3b0;
+      }
+    }
+    .home-service:hover {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      transition: 0.6s linear;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button-24 {
+  width: 72%;
+  background: rgba(50, 73, 116, 0.979);
+  border: 1px solid rgba(71, 71, 71, 0.233);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  outline: 0;
+  padding: 8px 12px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff4742;
+  transition: 0.3s all linear;
+}
+
+.button-24:active {
+  opacity: 0.5;
+}
+
+//// response./////
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .wrap-home-page {
+    width: 100%;
+    .captcha-home {
+      width: 100%;
+      .service-all {
+        display: inline-block;
+        width: 100%;
+        .home-service {
+          width: 80%;
+          margin: auto;
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}

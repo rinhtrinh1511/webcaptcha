@@ -1,0 +1,108 @@
+.detal-wrap {
+  width: 55%;
+  margin: 120px auto 32px auto;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 32px;
+  box-sizing: border-box;
+  height: 67.6vh;
+  .menu-detail {
+    display: flex;
+    img {
+      width: 396px;
+      // border: 1px solid #c5c4c4;
+      border-radius: 6px;
+    }
+    .info-captcha {
+      width: 70%;
+      font-size: 1rem;
+      .title-detail {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: rgb(82, 153, 0);
+      }
+      .description-captcha {
+        padding: 0 24px;
+        font-weight: 500;
+        color: rgba(70, 70, 70, 0.815);
+      }
+      .title-category {
+        font-weight: 800;
+      }
+      .price-captcha-detail {
+        color: rgb(54, 9, 216);
+        font-weight: 600;
+      }
+      .price-captcha {
+        margin-top: 12px;
+        .for-month {
+          input {
+            width: 84px;
+            outline: none;
+            font-family: "Chakra Petch";
+            margin: 0 12px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #3333331e;
+            font-weight: 600;
+            color: #0025f5;
+          }
+          button {
+            font-family: "Chakra Petch";
+            border-radius: 4px;
+            border: 1px solid #3333331e;
+            padding: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: #1b1b1ba8;
+            background-color: rgb(223, 223, 223);
+
+            font-weight: 800;
+          }
+          button:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(68, 214, 10);
+            transition: background-color 0.3s ease, color 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+.snow-spin {
+  animation: spin 3s ease infinite;
+  color: rgb(6, 231, 44);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #description-captcha {
+    font-size: 14px;
+  }
+  span {
+    font-size: 14px;
+  }
+  #detal-wrap {
+    width: 100%;
+    height: auto;
+  }
+  #title-detail {
+    font-size: 28px;
+  }
+  #info-captcha {
+    text-align: center;
+    width: 100%;
+  }
+  #img_media {
+    display: none;
+  }
+}

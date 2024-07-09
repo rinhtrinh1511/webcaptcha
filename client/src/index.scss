@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: "Chakra Petch";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  color: #504747;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+li {
+  list-style: none;
+}
+ul {
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #504747;
+}

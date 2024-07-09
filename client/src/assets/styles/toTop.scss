@@ -1,0 +1,17 @@
+.back-to-top {
+  position: fixed;
+  bottom: 70px;
+  right: 50px;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: rgb(44, 38, 77) 0px 20px 30px -10px;
+  border-radius: 50%;
+  .back-to-top-button {
+    color: rgb(7, 113, 212);
+    opacity: 0.8;
+  }
+
+  .back-to-top-button:hover {
+    opacity: 1;
+  }
+}
